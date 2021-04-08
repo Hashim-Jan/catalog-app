@@ -24,12 +24,12 @@ class MyApp extends StatelessWidget {
       ///
       /// Light theme properties
       theme: ThemeData(
-        primarySwatch: Colors.cyan,
+        primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
       ///
       /// Routes
-      initialRoute: AppRoutes.loginScreen,
+      initialRoute: AppRoutes.homeScreen,
       routes: {
         /// slash shows by default route
         AppRoutes.homeScreen:(context)=>HomeScreen(),

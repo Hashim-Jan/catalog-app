@@ -1,3 +1,4 @@
+import 'package:catalog/screens/drawer_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,7 +8,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Catalog App'),
       ),
-      drawer: Drawer(),
+      drawer: DrawerScreen(),
       body: Center(
         child: Text('Welcome to flutter'),
       ),
