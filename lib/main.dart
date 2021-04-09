@@ -1,8 +1,8 @@
 import 'package:catalog/routes.dart';
 import 'package:catalog/screens/home_screen.dart';
 import 'package:catalog/screens/login_screen.dart';
+import 'package:catalog/widgets/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main(){
   runApp(MyApp());
@@ -18,15 +18,10 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       ///
       /// Dark theme properties
-      darkTheme: ThemeData(
-        brightness: Brightness.dark
-      ),
+      darkTheme: MyTheme.darkTheme(context),
       ///
       /// Light theme properties
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ),
+      theme: MyTheme.lightTheme(context),
       ///
       /// Routes
       initialRoute: AppRoutes.homeScreen,
